@@ -35,13 +35,13 @@
             <StackPanel Grid.Column="2"
                         Orientation="Horizontal"
                         HorizontalAlignment="Right">
-                <Button Content="0"
+                <Button Content="&#xE949;"
                         Style="{DynamicResource windowButtonStyle}"
                         Click="MinimizeButtonClick" />
-                <Button Content="1"
+                <Button Content="&#xE739;"
                         Style="{DynamicResource windowButtonStyle}"
                         Click="RestoreMaximizeButtonClick" />
-                <Button Content="r"
+                <Button Content="&#xE8BB;"
                         Style="{DynamicResource windowButtonStyle}"
                         Click="CloseButtonClick" />
             </StackPanel>
