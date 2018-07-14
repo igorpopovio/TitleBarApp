@@ -1,0 +1,7 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:core="clr-namespace:System;assembly=mscorlib">
+    <core:Double x:Key="DefaultFontSize">14</core:Double>
+    <Thickness x:Key="DefaultThickness">10</Thickness>
+    <FontFamily x:Key="AppFontFamily">Segoe UI</FontFamily>
+</ResourceDictionary>

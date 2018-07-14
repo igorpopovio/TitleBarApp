@@ -8,6 +8,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Colors.xaml" />
                 <ResourceDictionary Source="ControlStyles.xaml" />
+                <ResourceDictionary Source="OtherResources.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
