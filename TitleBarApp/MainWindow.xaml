@@ -27,25 +27,12 @@
             <StackPanel Grid.Column="2"
                         Orientation="Horizontal"
                         HorizontalAlignment="Right">
-                <StackPanel.Resources>
-                    <Style TargetType="{x:Type Button}">
-                        <Setter Property="BorderThickness"
-                                Value="0" />
-                        <Setter Property="Background"
-                                Value="Transparent" />
-                        <Setter Property="FontFamily"
-                                Value="Webdings" />
-                        <Setter Property="FontSize"
-                                Value="14" />
-                        <Setter Property="Width"
-                                Value="40" />
-                        <Setter Property="Height"
-                                Value="40" />
-                    </Style>
-                </StackPanel.Resources>
-                <Button Content="0" />
-                <Button Content="1" />
-                <Button Content="r" />
+                <Button Content="0"
+                        Style="{DynamicResource windowButtonStyle}" />
+                <Button Content="1"
+                        Style="{DynamicResource windowButtonStyle}" />
+                <Button Content="r"
+                        Style="{DynamicResource windowButtonStyle}" />
             </StackPanel>
         </Grid>
         <Border BorderBrush="Black"
