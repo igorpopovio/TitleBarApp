@@ -12,9 +12,12 @@
         MinHeight="300"
         Topmost="True"
         WindowStartupLocation="CenterScreen"
-        WindowStyle="None"
-        AllowsTransparency="True"
         ResizeMode="CanResizeWithGrip">
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="40"
+                      UseAeroCaptionButtons="False"
+                      ResizeBorderThickness="10" />
+    </WindowChrome.WindowChrome>
     <Window.Background>
         <SolidColorBrush Color="{DynamicResource AccentDarkColor}" />
     </Window.Background>

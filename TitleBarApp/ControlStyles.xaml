@@ -43,7 +43,10 @@
                 Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" />
         <Setter Property="BorderThickness"
                 Value="0" />
-        
+
+        <Setter Property="WindowChrome.IsHitTestVisibleInChrome"
+                Value="True" />
+
         <Setter Property="FontFamily"
                 Value="Webdings" />
         <Setter Property="FontSize"
@@ -52,7 +55,7 @@
                 Value="40" />
         <Setter Property="Height"
                 Value="40" />
-        
+
         <Setter Property="HorizontalContentAlignment"
                 Value="Center" />
         <Setter Property="VerticalContentAlignment"
