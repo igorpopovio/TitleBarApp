@@ -36,11 +36,14 @@
                         Orientation="Horizontal"
                         HorizontalAlignment="Right">
                 <Button Content="0"
-                        Style="{DynamicResource windowButtonStyle}" />
+                        Style="{DynamicResource windowButtonStyle}"
+                        Click="MinimizeButtonClick" />
                 <Button Content="1"
-                        Style="{DynamicResource windowButtonStyle}" />
+                        Style="{DynamicResource windowButtonStyle}"
+                        Click="RestoreMaximizeButtonClick" />
                 <Button Content="r"
-                        Style="{DynamicResource windowButtonStyle}" />
+                        Style="{DynamicResource windowButtonStyle}"
+                        Click="CloseButtonClick" />
             </StackPanel>
         </Grid>
         <Border BorderBrush="Black"
