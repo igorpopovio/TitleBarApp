@@ -18,7 +18,7 @@
             <RowDefinition Height="Auto" />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <Grid Background="{DynamicResource MainBrush}">
+        <Grid Background="{DynamicResource AccentBaseColorBrush}">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="50" />
                 <ColumnDefinition />
