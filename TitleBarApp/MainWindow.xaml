@@ -49,10 +49,8 @@
                        Text="{Binding Title, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MainWindow}}}"
                        Foreground="{DynamicResource AccentLightColorBrush}"
                        VerticalAlignment="Center"
-                       FontSize="16"/>
+                       FontSize="16" />
         </Grid>
-        <Border BorderBrush="Black"
-                BorderThickness="1"
-                Grid.Row="1" />
+        <Border Grid.Row="1" />
     </Grid>
 </Window>
