@@ -1,13 +1,19 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:local="clr-namespace:TitleBarApp">
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Color x:Key="HighlightColor">#FF086F9E</Color>
+
     <Color x:Key="AccentDarkColor">#FF070108</Color>
     <SolidColorBrush x:Key="AccentDarkColorBrush"
                      Color="{StaticResource AccentDarkColor}" />
+
+    <Color x:Key="AccentLightColor">#FFC6A3CC</Color>
+    <SolidColorBrush x:Key="AccentLightColorBrush"
+                     Color="{StaticResource AccentLightColor}" />
+
     <Color x:Key="AccentBaseColor">#FFBB14CC</Color>
     <SolidColorBrush x:Key="AccentBaseColorBrush"
                      Color="{StaticResource AccentBaseColor}" />
+
     <Color x:Key="AccentColor">#FFBB14CC</Color>
     <Color x:Key="AccentColor2">#FFA411B2</Color>
     <Color x:Key="AccentColor3">#FF8C0F99</Color>

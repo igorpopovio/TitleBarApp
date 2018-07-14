@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TitleBarApp"
         mc:Ignorable="d"
-        Title="Title bar"
+        Title="My Awesome App"
         Width="400"
         Height="300"
         MinWidth="400"
@@ -30,7 +30,7 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="50" />
                 <ColumnDefinition />
-                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
             <StackPanel Grid.Column="2"
                         Orientation="Horizontal"
@@ -45,6 +45,11 @@
                         Style="{DynamicResource windowButtonStyle}"
                         Click="CloseButtonClick" />
             </StackPanel>
+            <TextBlock Grid.Column="1"
+                       Text="{Binding Title, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MainWindow}}}"
+                       Foreground="{DynamicResource AccentLightColorBrush}"
+                       VerticalAlignment="Center"
+                       FontSize="16"/>
         </Grid>
         <Border BorderBrush="Black"
                 BorderThickness="1"

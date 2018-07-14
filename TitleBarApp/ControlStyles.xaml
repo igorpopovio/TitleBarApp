@@ -19,6 +19,8 @@
     </Style>
     <SolidColorBrush x:Key="Button.Static.Background"
                      Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="Button.Static.Foreground"
+                     Color="{DynamicResource AccentDarkColor}" />
     <SolidColorBrush x:Key="Button.Static.Border" />
     <SolidColorBrush x:Key="Button.MouseOver.Background"
                      Color="{DynamicResource AccentColor2}" />
@@ -40,7 +42,7 @@
         <Setter Property="BorderBrush"
                 Value="{StaticResource Button.Static.Border}" />
         <Setter Property="Foreground"
-                Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" />
+                Value="{StaticResource Button.Static.Foreground}" />
         <Setter Property="BorderThickness"
                 Value="0" />
 
