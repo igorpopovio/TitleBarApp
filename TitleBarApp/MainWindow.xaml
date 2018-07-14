@@ -6,13 +6,18 @@
         xmlns:local="clr-namespace:TitleBarApp"
         mc:Ignorable="d"
         Title="Title bar"
-        Width="800"
-        Height="450"
+        Width="400"
+        Height="300"
+        MinWidth="400"
+        MinHeight="300"
         Topmost="True"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
         AllowsTransparency="True"
         ResizeMode="CanResizeWithGrip">
+    <Window.Background>
+        <SolidColorBrush Color="{DynamicResource AccentDarkColor}" />
+    </Window.Background>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />

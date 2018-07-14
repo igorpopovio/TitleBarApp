@@ -2,6 +2,9 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:TitleBarApp">
     <Color x:Key="HighlightColor">#FF086F9E</Color>
+    <Color x:Key="AccentDarkColor">#FF070108</Color>
+    <SolidColorBrush x:Key="AccentDarkColorBrush"
+                     Color="{StaticResource AccentDarkColor}" />
     <Color x:Key="AccentBaseColor">#FFBB14CC</Color>
     <SolidColorBrush x:Key="AccentBaseColorBrush"
                      Color="{StaticResource AccentBaseColor}" />
