@@ -16,7 +16,7 @@
     <WindowChrome.WindowChrome>
         <WindowChrome CaptionHeight="40"
                       UseAeroCaptionButtons="False"
-                      ResizeBorderThickness="{DynamicResource DefaultThickness}" />
+                      ResizeBorderThickness="10" />
     </WindowChrome.WindowChrome>
     <Window.Background>
         <SolidColorBrush Color="{DynamicResource AccentDarkColor}" />
@@ -28,7 +28,7 @@
                     <DataTrigger Binding="{Binding WindowState, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MainWindow}}}"
                                  Value="Maximized">
                         <Setter Property="Margin"
-                                Value="{DynamicResource DefaultThickness}" />
+                                Value="7" />
                     </DataTrigger>
                 </Style.Triggers>
             </Style>
