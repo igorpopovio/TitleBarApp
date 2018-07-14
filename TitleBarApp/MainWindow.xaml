@@ -16,12 +16,23 @@
     <WindowChrome.WindowChrome>
         <WindowChrome CaptionHeight="40"
                       UseAeroCaptionButtons="False"
-                      ResizeBorderThickness="10" />
+                      ResizeBorderThickness="{DynamicResource DefaultThickness}" />
     </WindowChrome.WindowChrome>
     <Window.Background>
         <SolidColorBrush Color="{DynamicResource AccentDarkColor}" />
     </Window.Background>
     <Grid>
+        <Grid.Style>
+            <Style TargetType="{x:Type Grid}">
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding WindowState, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MainWindow}}}"
+                                 Value="Maximized">
+                        <Setter Property="Margin"
+                                Value="{DynamicResource DefaultThickness}" />
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+        </Grid.Style>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition />
