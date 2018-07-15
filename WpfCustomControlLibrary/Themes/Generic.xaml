@@ -17,61 +17,48 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:CustomWindow}">
-                    <Grid x:Name="rootGrid" Margin="7" Background="Blue">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition />
-                        </Grid.RowDefinitions>
-                        <Grid Background="{DynamicResource AccentBaseColorBrush}">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="50" />
-                                <ColumnDefinition />
-                                <ColumnDefinition Width="Auto" />
-                            </Grid.ColumnDefinitions>
-                            <StackPanel Grid.Column="2"
-                                        Orientation="Horizontal"
-                                        HorizontalAlignment="Right">
-                                <Button x:Name="PART_MINIMIZE"
-                                        Content="&#xE949;"
-                                        Style="{DynamicResource windowButtonStyle}" />
-                                <Button x:Name="PART_RESTORE"
-                                        Content="&#xE739;"
-                                        Style="{DynamicResource windowButtonStyle}" />
-                                <Button x:Name="PART_CLOSE"
-                                        Content="&#xE8BB;"
-                                        Style="{DynamicResource windowButtonStyle}" />
-                            </StackPanel>
-                            <TextBlock Grid.Column="1"
-                                       Foreground="{DynamicResource AccentLightColorBrush}"
-                                       Text="{Binding Title, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:CustomWindow}}}"
-                                       VerticalAlignment="Center"
-                                       FontSize="16" />
+                    <Border BorderThickness="0">
+                        <Grid x:Name="rootGrid">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Grid Background="{DynamicResource AccentBaseColorBrush}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50" />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Grid.Column="2"
+                                            Orientation="Horizontal"
+                                            HorizontalAlignment="Right">
+                                    <Button x:Name="PART_MINIMIZE"
+                                            Content="&#xE949;"
+                                            Style="{DynamicResource windowButtonStyle}" />
+                                    <Button x:Name="PART_RESTORE"
+                                            Content="&#xE739;"
+                                            Style="{DynamicResource windowButtonStyle}" />
+                                    <Button x:Name="PART_CLOSE"
+                                            Content="&#xE8BB;"
+                                            Style="{DynamicResource windowButtonStyle}" />
+                                </StackPanel>
+                                <TextBlock Grid.Column="1"
+                                           Foreground="{DynamicResource AccentLightColorBrush}"
+                                           Text="{Binding Title, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:CustomWindow}}}"
+                                           VerticalAlignment="Center"
+                                           FontSize="16" />
+                            </Grid>
+                            <ContentPresenter Grid.Row="1" />
                         </Grid>
-                        <ContentPresenter Grid.Row="1" />
-                    </Grid>
+                    </Border>
 
                     <ControlTemplate.Triggers>
                         <Trigger Property="WindowState"
                                  Value="Maximized">
-                            <!--<Setter Property="Margin"
+                            <Setter Property="Margin"
                                     TargetName="rootGrid"
-                                    Value="20" />-->
-                            <Setter Property="Background"
-                                    TargetName="rootGrid"
-                                    Value="Red" />
+                                    Value="7" />
                         </Trigger>
-                        <!--<DataTrigger Binding="{Binding WindowState, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:CustomWindow}}}"
-                                     Value="Maximized">
-                            <Setter Property="Background"
-                                    TargetName="rootGrid"
-                                    Value="Red" />
-                        </DataTrigger>
-                        <DataTrigger Binding="{Binding WindowState, RelativeSource={RelativeSource TemplatedParent}}"
-                                     Value="Maximized">
-                            <Setter Property="Background"
-                                    TargetName="rootGrid"
-                                    Value="Red" />
-                        </DataTrigger>-->
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
