@@ -6,28 +6,18 @@
             <Setter.Value>
                 <WindowChrome CaptionHeight="40"
                               UseAeroCaptionButtons="False"
-                              ResizeBorderThickness="10" />
+                              ResizeBorderThickness="10"
+                              GlassFrameThickness="0"
+                              CornerRadius="0" />
             </Setter.Value>
         </Setter>
 
         <Setter Property="Background"
                 Value="{DynamicResource AccentDarkColorBrush}" />
-
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:CustomWindow}">
                     <Grid>
-                        <Grid.Style>
-                            <Style TargetType="{x:Type Grid}">
-                                <Style.Triggers>
-                                    <DataTrigger Binding="{Binding WindowState, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:CustomWindow}}}"
-                                                 Value="Maximized">
-                                        <Setter Property="Margin"
-                                                Value="7" />
-                                    </DataTrigger>
-                                </Style.Triggers>
-                            </Style>
-                        </Grid.Style>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto" />
                             <RowDefinition />
