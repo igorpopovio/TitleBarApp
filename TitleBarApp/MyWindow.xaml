@@ -7,6 +7,9 @@
                  xmlns:local="clr-namespace:TitleBarApp"
                  mc:Ignorable="d"
                  Title="MyWindow"
+                 x:Name="MyWindowFORDEBUGGING"
+                 
+                 WindowState="Maximized"
                  Height="450"
                  Width="800">
     <Grid>
