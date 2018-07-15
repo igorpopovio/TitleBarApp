@@ -17,17 +17,17 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:CustomWindow}">
                     <Grid>
-                        <!--<Grid.Style>
+                        <Grid.Style>
                             <Style TargetType="{x:Type Grid}">
                                 <Style.Triggers>
-                                    <DataTrigger Binding="{Binding WindowState, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MainWindow}}}"
+                                    <DataTrigger Binding="{Binding WindowState, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:CustomWindow}}}"
                                                  Value="Maximized">
                                         <Setter Property="Margin"
                                                 Value="7" />
                                     </DataTrigger>
                                 </Style.Triggers>
                             </Style>
-                        </Grid.Style>-->
+                        </Grid.Style>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto" />
                             <RowDefinition />
@@ -48,9 +48,9 @@
                                 <Button Content="&#xE8BB;"
                                         Style="{DynamicResource windowButtonStyle}" />
                             </StackPanel>
-                            <!--Text="{Binding Title, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MainWindow}}}"-->
                             <TextBlock Grid.Column="1"
                                        Foreground="{DynamicResource AccentLightColorBrush}"
+                                       Text="{Binding Title, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:CustomWindow}}}"
                                        VerticalAlignment="Center"
                                        FontSize="16" />
                         </Grid>
